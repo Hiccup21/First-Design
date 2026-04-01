@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark"/>
+  <title>Web Design & Development</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body, html {
+      height: 100%;
+    }
+    body {
+      background: url(p.jpg) no-repeat center center/cover;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: none;
+    }
+    header h1 {
+      color: orange;
+      font-size: 24px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+    .search-box input {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+    .search-box button {
+      padding: 5px 15px;
+      border: none;
+      background-color: orange;
+      color: white;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 80px 50px;
+    }
+    .text-section {
+      max-width: 50%;
+    }
+    .text-section h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .text-section span {
+      color: orange;
+    }
+    .text-section p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    .text-section button {
+      background-color: orange;
+      border: none;
+      padding: 10px 25px;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-box {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+    }
+    .login-box h2 {
+      color: orange;
+      margin-bottom: 20px;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid orange;
+      border-radius: 5px;
+      background: transparent;
+      color: white;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-box .signup {
+      color: white;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .login-box .signup a {
+      color: orange;
+      text-decoration: none;
+    }
+    .social-login {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .social-login img {
+      width: 30px;
+      height: 30px;
+      filter: brightness(0) invert(1);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>aRoz</h1>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">SERVICE</a>
+      <a href="#">DESIGN</a>
+      <a href="#">CONTACT</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Type to Search">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="text-section">
+      <h1>Web Design & <span>Development Course</span></h1>
+      <p>Web Design is a specialisation of the design stream. They also use HTML, CSS, WYSIWYG editing software, markup validators etc. to create design elements.</p>
+      <button>JOIN US</button>
+    </div>
+
+    <div class="login-box">
+      <h2>Login Here</h2>
+      <input type="email" placeholder="Enter Email Here">
+      <input type="password" placeholder="Enter Password Here">
+      <button>Login</button>
+      <div class="signup">
+        Don't have an account? <a href="#">Sign up</a>here
+      </div>
+      <div class="social-login">
+        <img src="icons8-facebook-30.png" alt="Facebook">
+        <img src="icons8-instagram-48.png" alt="Instagram">
+        <img src="x-icon.png" alt="Twitter/X">
+        <img src="google-icon.png" alt="Google">
+        <img src="skype-icon.png" alt="Skype">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
